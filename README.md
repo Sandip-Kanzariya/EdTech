@@ -9,6 +9,11 @@ npx create-react-app .
 ```
 npm install -D tailwindcss
 npx tailwindcss init
+
+```
+
+```
+npm i react-router-dom lucide-react
 ```
 
 ### Run Project 

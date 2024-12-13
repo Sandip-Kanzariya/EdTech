@@ -1,10 +1,17 @@
 import './App.css';
+import { Auth } from './components/auth/Auth';
+import Nav from './components/Nav'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div >
-      <h1 className="text-3xl font-bold underline">Hello</h1>
-    </div>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" element={"Hello"} />
+        <Route path="/account" element={ <Auth/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
