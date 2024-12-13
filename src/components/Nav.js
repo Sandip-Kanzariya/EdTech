@@ -51,6 +51,10 @@ export default function Nav() {
       }
     });
 
+    // account tab in-active if user is logged in 
+    if (storedToken) {
+      menuItems[3].active = false;
+    }
     // If no authToken is present, log the user out
     if (!storedToken) {
       logOut();
